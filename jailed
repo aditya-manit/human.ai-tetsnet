@@ -1,0 +1,26 @@
+# stop the node
+
+7:27AM INF service stop impl={"Logger":{}} module=consensus msg={} server=node
+7:27AM INF service stop impl={"Logger":{}} module=consensus msg={} server=node wal=/root/.humansd/data/cs.wal/wal
+7:27AM INF service stop impl={"Dir":"/root/.humansd/data/cs.wal","Head":{"ID":"szunJTZV8yMI:/root/.humansd/data/cs.wal/wal","Path":"/root/.humansd/data/cs.wal/wal"},"ID":"group:szunJTZV8yMI:/root/.humansd/data/cs.wal/wal","Logger":{}} module=consensus msg={} server=node wal=/root/.humansd/data/cs.wal/wal
+7:27AM INF Closing rpc listener listener={"Listener":{}} server=node
+7:27AM INF RPC HTTP server stopped err="accept tcp [::]:26657: use of closed network connection" module=rpc-server server=node
+7:27AM ERR Error serving server err="accept tcp [::]:26657: use of closed network connection" server=node
+7:27AM ERR Stopped accept routine, as transport is closed module=p2p numPeers=0 server=node
+
+
+
+
+
+
+# started after getting jailed
+
+
+7:47AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"5A4E9C7825750486FAB62E10D49C6AC5959FF73902AC4658B4A92BF11C0C6CA2","parts":{"hash":"F8B77CB02D2807B37927063EAB848C9FC1BC3AC7399BF06909F1A22FB3239E77","total":1}},"height":111419,"pol_round":-1,"round":0,"signature":"IwW3jStusISjm8g1cDXoBnbz27eSFlRgKKAbpXobXUlvYL7AXS+Ik3Tv+hvs1PKAtBUj235jykfGqY2fUI9aCg==","timestamp":"2023-05-19T07:47:26.071889212Z"} server=node
+7:47AM INF received complete proposal block hash=5A4E9C7825750486FAB62E10D49C6AC5959FF73902AC4658B4A92BF11C0C6CA2 height=111419 module=consensus server=node
+7:47AM INF Served eth_chainId conn=45.136.41.6:58314 duration=0.018475 err="the method eth_chainId does not exist/is not available" module=geth reqid=11880504
+7:47AM INF finalizing commit of block hash={} height=111419 module=consensus num_txs=0 root=F95FF6C4574CB4FE3DBD169FEAF09E7EF973DD09E4A224FF1F1D9608A11AC0F4 server=node
+7:47AM INF executed block height=111419 module=state num_invalid_txs=0 num_valid_txs=0 server=node
+7:47AM INF commit synced commit=436F6D6D697449447B5B31323720343620343820383820323434203937203130342031313920313939203132382037203636203132392033312031373820313437203133332031353920363220343220313120323135203139372031383720313937203134362039312031373520352031333920323437203233375D3A31423333427D
+7:47AM INF committed state app_hash=7F2E3058F4616877C7800742811FB293859F3E2A0BD7C5BBC5925BAF058BF7ED height=111419 module=state num_txs=0 server=node
+7:47AM INF indexed block exents height=111419 module=txindex server=node
